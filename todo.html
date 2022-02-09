@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO_LIST</title>
+    <link rel="stylesheet" href="todo.css" />
+    <style>
+        table,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Create / Update TODO-LIST</h2>
+    <div>
+        <input type="text" id="input_title" placeholder="Title"><br>
+        <br />
+        <textarea id="input_description" placeholder="Description"></textarea><br>
+        <br />
+        <input type="number" id="input_priority" placeholder="Priority"><br>
+        <br />
+        <input type="date" id="input_deadline_date" placeholder="Deadline_date"><br>
+        <br />
+        <input type="text" id="input_status" placeholder="Status"><br>
+        <br />
+        <input type="text" id="input_labels" placeholder="Labels"><br>
+        <br />
+        <input type="text" placeholder="Client Name" id="input_client_name"><br>
+        <br />
+        <input type="email" placeholder="Client Email" id="input_client_email"><br>
+        <br />
+        <input type="number" placeholder="Client Mobile" id="input_client_mobile"><br>
+        <br />
+        <input type="hidden" id="input_index">
+        <button id="btn_add" onclick="add()">ADD</button><br>
+        <button id="btn_update" onclick="update()" style="display: none;">UPDATE</button><br>
+    </div>
+
+    <div>
+        <table border="1" id="mytable"></table>
+        <br>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
